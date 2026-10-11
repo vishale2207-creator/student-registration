@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Task</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid gray;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, select {
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #32c7ad;
+            border: none;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: left;
+            overflow-wrap: anywhere;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        .deleteBtn {
+            background-color: red;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+
+            table {
+                font-size: 11px;
+            }
+
+            th, td {
+                padding: 4px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>STUDENT REGISTRATION TASK</h1>
+
+    <h2>STUDENT FORM</h2>
+
+    <form id="studentForm">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter name" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter age"
+               min="1" required>
+
+        <label>Gender</label>
+        <div>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+
+        <label for="course">Course</label>
+        <select id="course" required>
+            <option value="">Select Course</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+        </select>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email" required>
+
+        <button type="submit">Save</button>
+
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>COURSE</th>
+                <th>GENDER</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentList"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
