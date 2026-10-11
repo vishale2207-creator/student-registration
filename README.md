@@ -12,7 +12,7 @@ Website Link: [ https://vishale2207-creator.github.io/student-registration/]
 
 ## GitHub Repository
 
-GitHub Link: [Add Your GitHub Repository Link Here]
+GitHub Link: [https://github.com/vishale2207-creator/student-registration]
 
 ## Features
 
